@@ -7,7 +7,7 @@
 
   - download and install Python 2.7.9 from https://www.python.org/downloads/ using installer relevant to your OS 
   - download and install the latest Selenium Webdriver package using command line: pip install selenium
-  - download and install requests* package using command line: pip install 
+  - download and install requests* package using command line: pip install requests
 
                             * this package is required to use Crossbrowsertesting.com REST API  
 
