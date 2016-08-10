@@ -7,10 +7,17 @@ from config import baseUrl, NAME, KEY
     #USE THIS CLASS FOR TESTING WITH BROWSER STACK PLATFORM
     
     def setUp(self):
-        desired_cap = {'browser': 'Firefox', 'browser_version': '35.0', 'os': 'Windows', 'os_version': '7', 'resolution': '1024x768'}
+        desired_cap = {
+                        'browser': 'Firefox', 
+                        'browser_version': '35.0', 
+                        'os': 'Windows', 
+                        'os_version': '7', 
+                        'resolution': '1024x768'
+                       }
         self.driver = webdriver.Remote(
-                                        command_executor='http://%s:%s@hub.browserstack.com:80/wd/hub' % (NAME, KEY),
-                                        desired_capabilities=desired_cap)
+                        command_executor='http://%s:%s@hub.browserstack.com:80/wd/hub' % (NAME, KEY),
+                        desired_capabilities=desired_cap
+                        )
         
         self.driver.implicitly_wait(15)
         self.driver.get(baseUrl)
