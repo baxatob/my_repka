@@ -1,1 +1,1 @@
-__(c) baxatob
+__(c) baxatob__
